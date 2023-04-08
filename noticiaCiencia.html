@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOTICIA</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+    integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+    crossorigin="anonymous"></script>
+  <style>
+    body {
+      background: #184e68;
+      background: linear-gradient(to right, #184e68, #57ca85);
+    }
+    p.primeralinea {
+    text-indent: 40px;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <div class="container mt-4">
+    <div class="row">
+      <!-- barra de navegación superior -->
+      <div class="col"></div>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
+        <div class="container-fluid">
+          <a class="navbar-brand py-0" href="principal.html">
+            <img src="Imagenes/logo3.JPG" class="rounded" alt="" width="75px" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="principal.html"
+                  >Inicio</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Periodistas
+                </a>
+                
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="periodistaJM.html">José Miguel Pérez</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="periodistaJC.html">José Carlos Pérez</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="periodistaMJ.html">María José Zambrano</a>
+                  </li>                   
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Secciones
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="SeccionInternacional.html">Internacional</a></li>
+                  <li><a class="dropdown-item" href="SeccionSucesos.html">Sucesos</a></li>
+                  <li><a class="dropdown-item" href="SeccionEconomia.html">Economía</a></li>
+                  <li><a class="dropdown-item" href="SeccionDeporte.html">Deporte</a></li>
+                  <li><a class="dropdown-item" href="SeccionCultura.html">Cultura</a></li>
+                  <li><a class="dropdown-item" href="SeccionCiencia.html">Ciencia</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactanos.html">Contactanos</a>
+              </li>
+            </ul>
+
+            <!-- Parte derecha de la barra superior -->
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <form class="d-flex" role="search">
+                  <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Autor, Sección o Palabra"
+                  aria-label="Search"
+                  />
+                  <button class="btn btn-outline-secondary me-3 py-0" type="submit">
+                  Buscar
+                  </button>
+                  <li class="nav-item">
+                      <button class="btn text-light py-0 bg-secondary" type="submit"><a class="nav-link text-light" href="loginPeriodista.html">Ingresar</a></button>
+                    </li>
+              </form>
+          </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="row">
+
+    </div>
+  </div>
+
+  <!-- Carrusel noticias-->
+  <section class="container mt-4">
+    <div class="row">
+      <div class="col">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Imagenes/ciencia.jpg" class="d-block w-100 rounded" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Imagenes/ciencia2.jpg" class="d-block w-100 rounded" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIA -->
+
+  <section class="container">
+    <div class="row">
+
+      <div class="my-2">
+        <h3 class="text-danger fw-bold">
+          CIENCIA
+        </h3>
+      </div>
+
+    <!-- INFORMACION -->
+
+
+    <div class="row">
+      <div class="col">
+        <p>
+        <h1 class="text-danger text-bg-dark fw-bold rounded">
+          El cabello de Beethoven: lo que investigadores encontraron en su ADN más de dos
+          siglos después de su muerte.
+        </h1>
+        <h4 class="text-light rounded"> María José Zambrano</h4>
+        <h6 class="text-light"> (Antofagasta)</h6>
+        <h5 class="text-light mb-3"><em> 12/02/2023</em></h5>
+        <h6 class="text-light">
+          <hr class="text-dark">
+          <p class="primeralinea">
+            Ludwig van Beethoven, uno de los músicos más virtuosos en la historia,
+            creó algunas de sus composiciones más reconocidas estando ya sordo. Recientemente, científicos
+            dieron a conocer los hallazgos que arrojó el análisis de varios mechones de su cabello.</p>
+          <p><b>Un breve repaso a la vida de Beethoven</b></p>
+          <p class="primeralinea">
+            La vida de Beethoven es extraordinaria, por donde quiera que se la examine. Nacido en fecha
+            desconocida en Bonn, Alemania. Fue bautizado el 17 de diciembre de 1770 y murió en Viena el 26
+            de marzo de 1827, a la edad de 56 años.</p>
+          <p class="primeralinea">
+            Beethoven tuvo una infancia miserable y dolorosa por los continuos maltratos de su padre, un
+            músico alcohólico y cruel, que al ver el talento de su hijo intentó sacar provecho haciéndolo
+            ensayar en el piano, de día y de noche, desde muy niño. A los 17 años se radicó en Viena, en
+            donde se enteró de la muerte de su madre, teniendo que hacerse cargo de la familia porque su
+            padre seguía hundido en el alcohol.</p>
+          <p class="primeralinea">
+            Su primera aparición pública fue en en Cologne a los 7 años. Su primer concierto en Viena, a los 25,
+            ciudad en la que ya se había hecho cierta fama como el sucesor de Mozart, quien había muerto unos
+            años antes. Pero el destino le tenía preparadas dos cosas después de los 26 años: una grave
+            enfermedad y sus mejores composiciones. </p>
+          <p><b class="text-dark">¿Qué hay de la salud de Beethoven?</b></p>
+          <p class="primeralinea">
+            Beethoven empezó a perder rápidamente la audición a los 26 años. En su museo en Viena se pueden
+            ver las cornetas de metal que se ponía en los oídos para poder dirigir sus conciertos.</p>
+          <p class="primeralinea">
+            A los 44 años quedó completamente sordo.</p>
+          <p class="primeralinea">
+            ¡Qué ironía! Uno de los más grandes genios musicales de todas las épocas, un hombre para quien la
+            música lo era todo, estuvo condenado a la sordera completa por el resto de su vida, época sin
+            embargo en la que compuso sus más grandes creaciones musicales.</p>
+          <p class="primeralinea">
+            Muchas de sus grandes sinfonías, conciertos y sonatas se compusieron cuando
+            el gran músico era ya sordo. Se pensaba que al haber adquirido la sordera durante su adultez,
+            Beethoven fue capaz de almacenar en su memoria notas musicales y miles de variaciones musicales,
+            que él luego imaginaba y escribía en partituras que, tristemente, nunca pudo escuchar.</p>
+          <p class="primeralinea">
+            Pero durante sus años de sordera, Beethoven no solo desarrolló un alcoholismo severo, sino que
+            cambió mucho su comportamiento, alternando profundas depresiones en las que se alejaba de la gente,
+            con periodos de marcada efusividad y explosiones de carácter.</p>
+          <p class="primeralinea">
+            Es durante esos tristes años de su vida que Beethoven deja una carta dirigida a sus hermanos Johann
+            y Karl que nunca llegó a enviar y que encontraron dos allegados el día siguiente de su muerte.</p>
+          <p class="primeralinea">
+            En dicha carta, llamada el Testamento de Heiligenstadt, escrita en 1802, cuando Beethoven tenía casi
+            32 años y su sordera era muy profunda, el músico se queja amargamente de su sordera, y le escribe a
+            sus hermanos: “Hermanos Karl y Johann, cuando yo muera, y si el profesor Schmidt vive todavía, rogadle
+            en mi nombre que describa mi enfermedad”.</p>
+          <p class="primeralinea">
+            Lamentablemente, ese deseo no pudo cumplirse porque el Dr. Johann Schmidt, su médico personal,
+            murió muy joven, 18 años antes que Beethoven.</p>
+          <p><b class="text-dark">El genoma de Beethoven</b></p>
+          <p class="primeralinea">
+            200 años después la moderna tecnología genética logró una hazaña científica: decodificar el genoma
+            completo del gran genio de la música. Los investigadores dicen que tres de esos mechones eran falsos.
+            Mientras que cinco, por tener un genoma idéntico y corresponder a la misma persona, fueron atribuidos
+            a Beethoven.La idea era buscar alguna explicación genética a:</p>
+          <p><b class="text-dark">Su sordera</b></p>
+          <p class="primeralinea">
+            Los múltiples trastornos gastrointestinales que sufrió durante su vida (con cólicos y diarreas
+            muy frecuentes) la causa de su muerte, que según su autopsia, se debió a una cirrosis del hígado
+            A través de los últimos 100 años, se han propuesto varias enfermedades para explicar la sordera
+            de Beethoven, incluyendo:</p>
+          <li>La otosclerosis o endurecimiento de los huesecillos del oído</li>
+          <li>La enfermedad ósea de Paget</li>
+          <li>Las complicaciones de la enfermedad de Crohn o la colitis ulcerosa</li>
+          <li>El lupus eritematoso sistémico</li>
+          <p class="primeralinea">
+            Los investigadores dicen que tres de esos mechones eran falsos. Mientras que cinco, por tener un
+            genoma idéntico y corresponder a la misma persona, fueron atribuidos a Beethoven.</p>
+          <p class="primeralinea">
+            Del mismo modo, aunque muchos biógrafos médicos pensaron que los síntomas gastrointestinales de
+            Beethoven pudieron haber sido causados por el síndrome del intestino irritable, la enfermedad de
+            Crohn o la colitis ulcerativa, no se encontraron rasgos genéticos de esas enfermedades.</p>
+          <p class="primeralinea">
+            Los investigadores además indagaron por otras causas de enfermedad intestinal, tales como la
+            enfermedad celíaca y la intolerancia a la lactosa, las cuales también fueron negativas, pensándose
+            más bien que Beethoven pudo tolerar la leche hasta su edad adulta.</p>
+          <p class="primeralinea">
+            Beethoven tenía predisposición a la cirrosis hepática, según investigadores con respecto a los
+            problemas en el hígado que le causaron la muerte, los investigadores encontraron que Beethoven
+            tenía una fuerte predisposición genética a la cirrosis hepática. Esto aunado a los múltiples
+            datos que indican que Beethoven abusaba del alcohol pudieron haber contribuido al desarrollo de
+            la cirrosis del hígado.</p>
+          <p class="primeralinea">
+            Además, usando una técnica llamada metagenómica, que consiste en buscar material genético de virus
+            y bacterias en la muestra, los autores fueron capaces de saber que Beethoven tuvo una infección
+            por el virus de la hepatitis B.</p>
+          <p class="primeralinea">
+            Se piensa que debido a las múltiples punciones abdominales que le hicieron los médicos para extraerle
+            la enorme cantidad de líquido que se formaba dentro de su vientre por la cirrosis, Beethoven
+            desarrolló infecciones de la piel, que se complicaron con peritonitis y septicemia, la que finalmente
+            le causó la muerte.</p>
+          <p class="primeralinea">
+            Se cuenta que, estando en plena agonía, ocurrió una severa tormenta en la ciudad, lo que hizo que 
+            Beethoven despertara y dijera antes de morir: “Plaudite amice, coemedia finita est” que en latín significa:
+            Aplaudan amigos, la comedia ha terminado. Sin embargo, el análisis genómico de Beethoven demostró un
+            sorpresivo e inesperado hallazgo familiar.</p>
+          <p class="primeralinea">
+            ASin embargo, el análisis genómico de Beethoven demostró un sorpresivo e inesperado hallazgo familiar.</p>
+          <p><b class="text-dark">El gen sorpresa</b></p>
+          <p class="primeralinea">
+            Al compararse el genoma de Beethoven con el de cinco de sus supuestos descendientes varones de
+            nacionalidad belga, los investigadores dieron con la sorpresa de que el cromosoma Y de Beethoven, que
+            se transfiere casi sin cambios de generación en generación por la línea paterna, es diferente al de sus
+            familiares sobrevivientes.</p>
+          <p class="primeralinea">
+            Ese hecho -según los investigadores- solo podría tener una explicación, la cual es que tuvo que haber al
+            menos una paternidad extramatrimonial con descendencia en la línea paterna de Beethoven, que en palabras
+            sencillas indicaría que alguno de los ancestros varones de Beethoven, no tuvo el mismo padre de los
+            descendientes actuales del músico.</p>
+          <p class="primeralinea">
+            Hubo siete generaciones de van Beethoven entre el nacimiento del antecesor más antiguo conocido del músico,
+            Hendrik van Beethoven en 1572, y el nacimiento de Ludwig van Beethoven en Bonn alrededor de 1770, pero sin
+            otros datos genéticos familiares de referencia, es imposible saber cuándo sucedió esa paternidad
+            extramatrimonial.</p>
+          <p class="primeralinea">
+            Para los conocedores, en la Patética, su octava sonata para piano, escrita en 1798, cuando Beethoven tenía
+            casi 28 años y empezaba a quedarse sordo, el músico expresa la tristeza y la tragedia de su vida, que luego
+            escribiría en el testamento de Heiligenstadt cuando dice: “¡Ah!, cómo poder confesar la debilidad de un sentido
+            que en mí debería existir en un estado de mayor perfección, en una perfección tal que muy pocos músicos la hayan
+            conocido jamás”.</p>
+
+          </h6>
+          <hr>
+        </p>
+      </div>
+    </div>
+
+
+  </section>
+
+</body>
+
+</html>

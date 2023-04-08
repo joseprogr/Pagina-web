@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGREGAR NOTICIA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+    integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <style>
+    body {
+      background: #184e68;
+      background: linear-gradient(to right, #184e68, #57ca85);
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <!-- Barra superior -->
+
+  <div class="container-fluid mt-3 ">
+    <div class="row">
+        <div class="col-4 rounded-end">
+            
+              <button class="btn btn-dark bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+             
+                <img class=" float-start pt-1 pe-3 img-fluid mx-auto d-block d-none d-lg-block" src="Imagenes/logo1.png" alt="" width="80px">
+                <div class="float-end">
+                    <h3 class="text-black fw-bold">JOSE PEREZ</h3>
+                    <h6 class="fw-bold text-warning">PERIODISTA</h6>
+                </div>
+                
+              </button>
+              
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Periodista</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+              <div class="offcanvas-body">
+
+                  <a class="btn btn-secondary text-start d-grid mb-4" href="agregarNoticia.html" role="button"><i class="bi bi-file-earmark-plus"> Nueva Publicación </i></a>
+                  <a class="btn btn-secondary text-start d-grid" href="NotificacionPeriodista.html" role="button"><i class="bi bi-chat-left-text"> Notificaciones </i></a>                     
+                  <a class="btn btn-primary mt-5" href="usuarioPeriodista.html" role="button"><i class="bi bi-box-arrow-left"></i> Volver</a>
+              </div>
+                </div>
+              </div>
+
+        </div>
+    </div>
+  <!-- Fin barra superior -->
+
+  <div class="container my-5">
+    <form>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label fw-bold text-light"><H1>AGREGAR NOTICIA</H1></label>
+      </div>
+      
+     
+
+      <div class="dropdown mb-3">
+        <button class="btn btn-success dropdown-toggle fw-bold text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          SELECCIONAR SECCIÓN
+        </button>
+        <ul class="dropdown-menu dropdown-menu-fw-bold text-light">
+          <li><a class="dropdown-item" href="#">Internacional</a></li>
+          <li><a class="dropdown-item" href="#">Sucesos</a></li>
+          <li><a class="dropdown-item" href="#">Economía</a></li>
+          <li><a class="dropdown-item" href="#">Deporte</a></li>
+          <li><a class="dropdown-item" href="#">Cultura</a></li>
+          <li><a class="dropdown-item" href="#">Ciencias</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="mb-3 ">
+        <label for="exampleFormControlInput1" class="form-label fw-bold text-light">TITULO NOTICIA</label>
+        <input type="titulo" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese el titulo de la noticia">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label fw-bold text-light">AUTOR</label>
+        <input type="autor" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese el autor">
+      </div>
+      
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label fw-bold text-light">INGRESE EL TEXTO DE LA NOTICIA / HASTA 500 PALABRAS</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label fw-bold text-light">CARGAR IMAGENES</label>
+        <input type="imagen1" class="form-control" id="exampleFormControlInput1" placeholder="ej:imagen1.jpg">
+      </div>
+      <button type="submit" class="btn btn-outline-dark text-white">Cargar</button>
+      <div> <button type="submit" class="btn btn-success my-4">Enviar</button> </div>
+      
+    </form>
+  </div>
+
+</body>
+
+</html>
